@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      
+  <meta charset="UTF-8">
+      
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Font Size Demo</title>
+</head>
+
+<body>
+  <p id="myPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis eaque deserunt error voluptatum minus. Optio expedita nulla quaerat illo impedit, obcaecati labore nihil reprehenderit totam natus accusamus id ut.
+  </p>
+  <button onclick="increaseFontSize()"> + </button> 
+  <button onclick="decreaseFontSize()"> - </button>
+      
+  <script>
+    let p = document.getElementById('myPara');
+    let currentFontSize = 10;
+    function increaseFontSize() {
+      currentFontSize = currentFontSize + 1;
+      p.style.fontSize = currentFontSize + 'px';
+    }
+    function decreaseFontSize() {
+      currentFontSize = currentFontSize - 1;
+      p.style.fontSize = currentFontSize + 'px';
+    }
+  </script>
+</body>
+
+</html>
